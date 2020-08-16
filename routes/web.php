@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/', 'Main@index()');
+Route::get('/', 'Main@index');
+Route::post('/', 'Main@store');
+
+Route::get('/survey/{id}', 'Surveys@show');
+Route::post('/survey/{id}', 'Surveys@store');
