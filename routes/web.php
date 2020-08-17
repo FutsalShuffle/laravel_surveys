@@ -19,3 +19,5 @@ Route::post('/', 'Main@store');
 
 Route::get('/survey/{id}', 'Surveys@show');
 Route::post('/survey/{id}', 'Surveys@store');
+
+Route::get('/survey/{id}/result', 'Results@show');

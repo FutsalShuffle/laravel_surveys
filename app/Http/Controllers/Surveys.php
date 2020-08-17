@@ -13,7 +13,6 @@ class Surveys extends Controller
     }
     public function store(Request $request)
     {
-        dump($request->all());
         $survey_id = $request->surveyid;
         $questions = $request->question;
         $answers = $request->answer;
